@@ -1,0 +1,16 @@
+
+
+<div class="bar bg-black d-flex py-0 align-items-stretch w-100" style="padding-left: 10px;">
+    <div class="w-100 px-3 d-flex align-items-center justify-content-between">
+        
+        <button (click)="emitEvent()" class="p-0" mat-button><mat-icon class="m-0">menu</mat-icon></button>
+        
+        <h4 class="my-auto mx-2"> Reserver </h4>
+
+        <div class="d-flex justify-content-end gap-4">
+            <a class="clickp"><mat-icon class="onhover" color="primary" matTooltip="Perfil">person_pin</mat-icon></a>
+            <a class="clickp" (click)="closeSession()"><mat-icon class="onhover" color="primary" matTooltip="Salir">exit_to_app</mat-icon></a>
+            
+        </div>
+     </div>
+</div>

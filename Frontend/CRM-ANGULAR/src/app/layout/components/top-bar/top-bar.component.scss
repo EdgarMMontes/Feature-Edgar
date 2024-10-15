@@ -1,0 +1,11 @@
+.bar{
+    min-height: 60px;
+    max-height: auto;
+}
+mat-icon{
+    transform: scale(1.5);
+}
+
+.onhover:hover{
+    filter: drop-shadow(4px 4px 5px rgb(0, 172, 172)) !important;
+}

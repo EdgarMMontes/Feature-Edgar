@@ -1,0 +1,14 @@
+<div class="main-screen vw-100  " >
+    <mat-drawer-container autosize class="main-screen ">
+        <mat-drawer #drawer class="vh-100 side-bar" mode="over">
+            <layout-side-bar></layout-side-bar>
+        </mat-drawer>
+
+        <layout-top-bar style="position: sticky; top: 0;" class="w-100" (topBarClicked)="drawer.toggle()"></layout-top-bar>
+        
+        <div class="content">
+            <router-outlet></router-outlet>
+        </div>
+
+      </mat-drawer-container>
+</div>

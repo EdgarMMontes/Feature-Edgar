@@ -1,0 +1,26 @@
+<form [formGroup]="formLogin" class="login gap-2">
+    <div class="my-3">
+        <h2 class="title text-light text-center ">Reserver</h2>
+        <h5 class=" title text-light text-center "> Iniciar Sesión </h5>
+    </div>
+    
+
+    <mat-form-field appearance="outline" class="col-8">
+        <mat-label>Usuario</mat-label>
+        <input formControlName="user" matInput>
+        <mat-error>El usuario es requerido</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="col-8">
+        <mat-label>Contaseña</mat-label>
+        <input formControlName="password" matInput type="password">
+        <mat-error>La contraseña es requerido</mat-error>
+    </mat-form-field>
+    <mat-checkbox formControlName="rememberMe" class="col-8 m-0">Recordar sesión</mat-checkbox>
+
+
+    <div class="col-12 mt-4 d-flex justify-content-center gap-3">
+        <button class="col-4" type="submit" (click)="submit()" mat-flat-button>Ingresar</button>
+        <button class="col-4" type="button" (click)="redirToRegister()" mat-stroked-button>Registrarme</button>
+    </div>
+</form>

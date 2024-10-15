@@ -1,0 +1,43 @@
+.screen{
+    min-height: 100vh;
+    min-width: 100vw;
+    background: linear-gradient( 135deg,rgb(0, 10, 10), rgb(0, 172, 172), rgb(0, 10, 10)  );
+    background-size: 200% 200%;
+    animation: gradientDiagonalMove 7s ease infinite;
+
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        min-height: 500px;
+        max-height: auto;
+        color: #000;
+        border-radius: 20px;
+        padding: 5px;
+        background-color: rgba(0, 0, 0, 0.8);
+        // box-shadow: ;
+        box-shadow: 2px 2px 20px 10px rgba(255, 255, 255, 0.3);
+    }
+    .styled-logo {
+      height: 520px;
+      width: 520px;
+      padding: 20px; 
+      border: 5px solid #000000; 
+      margin: 15px; 
+      background-color: #328a8d; 
+    }
+}
+
+
+@keyframes gradientDiagonalMove {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }

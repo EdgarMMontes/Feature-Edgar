@@ -1,0 +1,36 @@
+<form [formGroup]="formRegister" class="login gap-2">
+    <div class="my-3">
+        <h3 class="title text-light text-center ">Registrate</h3>
+    </div>
+    
+
+    <mat-form-field appearance="outline" class="col-8">
+        <mat-label>Usuario</mat-label>
+        <input formControlName="user" matInput>
+        <mat-error>El usuario es requerido</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="col-8">
+        <mat-label>Contaseña</mat-label>
+        <input formControlName="password" matInput type="password">
+        <mat-error>La contraseña es requerido</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="col-8">
+        <mat-label>Correo</mat-label>
+        <input formControlName="email" matInput>
+        <mat-error>El correo es requerido</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="col-8">
+        <mat-label>Telefono</mat-label>
+        <input formControlName="phone" matInput type="number">
+        <mat-error>El telefono es requerido</mat-error>
+    </mat-form-field>
+
+
+    <div class="col-12 my-4 d-flex justify-content-center gap-3">
+        <button class="col-4" type="button" (click)="register()" mat-flat-button>Ingresar</button>
+        <button class="col-4" type="button" (click)="redirToLogin()" mat-stroked-button>Ya tengo cuenta</button>
+    </div>
+</form>
